@@ -1,0 +1,41 @@
+html {
+background-color:goldenrod;
+}
+div h1 {
+    color:crimson;
+}
+
+body > div {
+    color:white;
+    font-size: large;
+}
+h1 + p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a:hover {
+    font-size: 1.5rem;
+    color:indigo;
+}
+
+a:link {
+    color:darkred;
+}
+
+a:visited {
+    color:darkblue;
+}
+
+a:active {
+    font-size:2rem;
+}
+
+body > section {
+    font-size: large;
+}
+
+#ptag {
+    color: lavender;
+    font-style: italic;
+}
+
+
