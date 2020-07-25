@@ -1,6 +1,7 @@
 html {
 background-color:goldenrod;
 }
+
 div h1 {
     color:crimson;
 }
@@ -37,5 +38,29 @@ body > section {
     color: lavender;
     font-style: italic;
 }
+#grid-container {
+    display: grid;
+    row-gap: 10vh;
+}
+#grid {
+    display: grid;
+    grid-template-columns:50% 40%;
 
+}
+#text {
+    margin-top: 10vh;
+    font-style: italic;
+}
+
+#grid2 {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    
+}
+#footer {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-top: 5vh;
+ 
+}
 
