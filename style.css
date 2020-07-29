@@ -83,6 +83,12 @@ grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
  
 }
 
+#header {
+    display: grid;
+    grid-template-columns: 10% 40%  10% 20%;
+    background-color:lightpink;
+
+}
 
 #header-logo {
 width: 50px;
@@ -93,13 +99,9 @@ transition-timing-function: linear;
 }
 #header-logo:hover {
    width: 100px; 
+
 }
 
-#header {
-    display: grid;
-    grid-template-columns: 10% 40%  10% 20%;
-    background-color:lightpink;
-}
 
 #about {
     margin-top:5vh ; 
@@ -118,7 +120,6 @@ background-color: lightcoral;
 
 }
 #menu {
-
     margin-top:5vh ;    
     color:white;   
     background-color:lightpink;

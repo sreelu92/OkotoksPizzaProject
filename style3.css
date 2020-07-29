@@ -1,0 +1,68 @@
+
+#container {
+    width:90%;
+    display: grid;
+    background-color:lightgrey;
+    
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    column-gap: 5px;
+    row-gap: 5px;
+
+
+
+    
+}
+#pizza-one,#pizza-two,#pizza-three {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    object-fit: cover;
+    column-gap: 5px;
+    justify-items: center;
+    margin-left: 5%;
+    row-gap: 5px;
+   
+}
+.p-tag {
+    color: maroon;
+    font-style: italic;
+    font-size:smaller;
+}
+
+.images {
+    width: 100px;
+    height: 100px;
+}
+@media only screen and (min-width:600px) {
+    #container{
+        background-color:lightslategray;}
+        .images {
+            width: 150px;
+            height: 150px;
+        }
+        .p-tag {
+            color: firebrick;
+            font-style: italic;
+            font-size: large;
+        }
+
+        
+    
+    
+
+}
+@media only screen and (min-width:1020px)
+{
+    #container {
+        background-color: lightsteelblue;}
+        .images {
+            width: 200px;
+            height: 200px;
+        }
+
+        .p-tag {
+            color:darkred ;
+            font-style: italic;
+            font-size: larger;
+        }
+    
+}
