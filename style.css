@@ -1,134 +1,149 @@
 html {
-background-color:lightsalmon;
+  background-color: lightsalmon;
 }
 
 div h1 {
-    color:crimson;
+  color: crimson;
 }
 
 body > div {
-    font-size: large;
+  font-size: large;
 }
+
 h1 + p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 a:hover {
-    font-size: 1.5rem;
-    color:indigo;
+  font-size: 1.5rem;
+  color: indigo;
 }
 
 a:link {
-    color:darkred;
+  color: darkred;
 }
 
 a:visited {
-    color:darkblue;
+  color: darkblue;
 }
 
 a:active {
-    font-size:2rem;
+  font-size: 2rem;
 }
 
 body > section {
-    font-size: large;
-}
-
-#ptag {
-    color: lavender;
-    font-style: italic;
-    margin-left: 5%;
-}
-#grid-zero{
-    display: grid;
-    row-gap: 10vh;
-    width: 90%;
-
-}
-#grid {
-    display: grid;
-grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-
-}
-#grid-container {
-  
-    color: black;
-    width:100%
-}
-#text {
-    margin-top: 7vh;
-    margin-left: 50%;
-    font-style: italic;
-    color:white;
-    
-}
-
-#grid2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-   
-    
-}
-.grid2-image {
-   
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    width: 100%;
-    height: 30vh;
-  
-}
-#footer {
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    margin-top: 5vh;
-    
- 
+  font-size: large;
 }
 
 #header {
-    display: grid;
-    grid-template-columns: 10% 40%  10% 20%;
-    background-color:lightpink;
-
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 40%  10% 20%;
+      grid-template-columns: 10% 40%  10% 20%;
+  background-color: lightpink;
 }
 
-#header-logo {
-width: 50px;
-float: left;
-transition-property: width;
-transition-duration: 1s;
-transition-timing-function: linear;
-}
-#header-logo:hover {
-   width: 100px; 
-
-}
-
-
-#about {
-    margin-top:5vh ; 
-    margin-left: 50%;
-    color:white;   
-    background-color:lightpink;
-
-    transition-property: color;
-    transition-duration:0.5s;
-    transition-timing-function: ease-in-out;
-}
-#about:hover {
-color:blue ;
-background-color: lightcoral;
-
-
-}
-#menu {
-    margin-top:5vh ;    
-    color:white;   
-    background-color:lightpink;
-    transition-property: color;
-    transition-duration:0.5s;
-    transition-timing-function: ease-in-out
-}
-#menu:hover{
-    color: blue;
-    background-color: lightcoral;
+#header #header-logo {
+  width: 50px;
+  float: left;
+  -webkit-transition-property: width;
+  transition-property: width;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
+#header #header-logo:hover {
+  width: 100px;
+}
+
+#header #ptag {
+  color: lavender;
+  font-style: italic;
+  margin-left: 5%;
+}
+
+#header #menu {
+  margin-top: 5vh;
+  color: white;
+  background-color: lightpink;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+#header #menu:hover {
+  color: blue;
+  background-color: lightcoral;
+}
+
+#header #about {
+  margin-top: 5vh;
+  margin-left: 50%;
+  color: white;
+  background-color: lightpink;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
+}
+
+#header #about:hover {
+  color: blue;
+  background-color: lightcoral;
+}
+
+#grid-container {
+  color: black;
+  width: 100%;
+}
+
+#grid-container #grid-zero {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 10vh;
+  width: 90%;
+}
+
+#grid-container #grid-zero #grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#grid-container #grid-zero #grid #text {
+  margin-top: 7vh;
+  margin-left: 50%;
+  font-style: italic;
+  color: white;
+}
+
+#grid-container #grid-zero #grid2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+#grid-container #grid-zero #grid2 .grid2-image {
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  width: 100%;
+  height: 30vh;
+}
+
+#footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  margin-top: 5vh;
+}
+/*# sourceMappingURL=style.css.map */

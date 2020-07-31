@@ -1,0 +1,157 @@
+@import '_variables';
+
+
+html {
+background-color:$font-color1;
+}
+
+div h1 {
+    color:$font-color;
+}
+
+body > div {
+    font-size: large;
+}
+h1 + p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a:hover {
+    font-size: 1.5rem;
+    color:$font-color2;
+}
+
+a:link {
+    color:$font-color10;
+}
+
+a:visited {
+    color:$font-color3;
+}
+
+a:active {
+    font-size:2rem;
+}
+
+body > section {
+    font-size: large;
+}
+
+
+
+#header {
+    display: grid;
+    grid-template-columns: 10% 40%  10% 20%;
+    background-color:$font-color5;
+    #header-logo {
+        width: 50px;
+        float: left;
+        transition-property: width;
+        transition-duration: 1s;
+        transition-timing-function: linear;
+        &:hover {
+            width: 100px;
+        }
+    }
+    #ptag {
+        color: $font-color6;
+        font-style: italic;
+        margin-left: 5%;
+    }
+    #menu {
+        margin-top:5vh ;    
+        color:$font-color7;   
+        background-color:$font-color5;
+        transition-property: color;
+        transition-duration:0.5s;
+        transition-timing-function: ease-in-out;
+        &:hover{
+            color: $font-color9;
+            background-color: $font-color8;
+        }
+
+    }
+    #about {
+        margin-top:5vh ; 
+        margin-left: 50%;
+        color:$font-color7;   
+        background-color:$font-color5;
+    
+        transition-property: color;
+        transition-duration:0.5s;
+        transition-timing-function: ease-in-out;
+        &:hover {
+            color:$font-color9 ;
+            background-color: $font-color8;
+            
+            
+            }
+
+    }
+
+    
+    
+    
+
+}
+
+#grid-container {
+  
+    color: $font-color4;
+    width:100%;
+    #grid-zero{
+        display: grid;
+        row-gap: 10vh;
+        width: 90%;
+        #grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            #text {
+                margin-top: 7vh;
+                margin-left: 50%;
+                font-style: italic;
+                color:$font-color7;
+            
+            }
+
+        
+        }
+        #grid2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            .grid2-image {
+   
+                grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+                width: 100%;
+                height: 30vh;
+              
+            }
+           
+            
+        }
+
+
+    
+    }
+
+}
+
+
+
+
+#footer {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin-top: 5vh;
+    
+ 
+}
+
+
+
+
+
+
+
+
+
+

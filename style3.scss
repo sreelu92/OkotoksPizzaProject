@@ -1,0 +1,52 @@
+@import '_mixins';
+@import '_variables';
+
+#container {
+    @include animateContainer();
+}
+
+.p-tag {
+    color: maroon;
+    font-style: $font-style;
+    font-size:$font-size;
+}
+
+.images {
+   @include animateImage(100%,20vh);
+    object-fit: cover;
+
+}
+@media only screen and (min-width:600px) {
+    #container{
+        background-color:lightslategray;}
+        .images {
+            width: 150px;
+            height: 150px;
+        }
+        .p-tag {
+            color: firebrick;
+            font-style: italic;
+            font-size: large;
+        }
+
+        
+    
+    
+
+}
+@media only screen and (min-width:1020px)
+{
+    #container {
+        background-color: lightsteelblue;}
+        .images {
+            width: 200px;
+            height: 200px;
+        }
+
+        .p-tag {
+            color:darkred ;
+            font-style: italic;
+            font-size: larger;
+        }
+    
+}

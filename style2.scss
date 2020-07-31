@@ -1,0 +1,17 @@
+@import '_mixins';
+
+body {
+    background-color: darkkhaki;
+}
+
+#grid-container {
+   display: grid; 
+   #location {
+    
+    @include animateLocation();
+    }
+
+
+
+   
+}

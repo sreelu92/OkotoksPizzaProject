@@ -1,14 +1,19 @@
-#grid-container {
-   display: grid; 
-}
 body {
-    background-color: darkkhaki;
+  background-color: darkkhaki;
 }
 
-#location {
-    display: grid;
-   grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 50% 50%;
-    grid-row-gap: 10px;
+#grid-container {
+  display: -ms-grid;
+  display: grid;
 }
 
+#grid-container #location {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  grid-row-gap: 10px;
+}
+/*# sourceMappingURL=style2.css.map */
